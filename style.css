@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom right, #ffb6c1, #ffc0cb);
+    font-family: 'Comic Sans MS', cursive;
+}
+
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+}
+
+.card h1 {
+    color: hotpink;
+    font-size: 40px;
+}
+
+.card h2 {
+    color: deeppink;
+    font-size: 32px;
+}
+
+.card p {
+    font-size: 20px;
+    color: #444;
+}
