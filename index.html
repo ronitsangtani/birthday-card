@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday</title>
+
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: radial-gradient(circle, #ffb6c1, #ff69b4);
+            font-family: 'Comic Sans MS', cursive;
+            cursor: pointer;
+        }
+
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+        .card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(255, 20, 147, 0.7);
+            z-index: 5;
+            width: 420px;
+        }
+
+        h1 {
+            color: hotpink;
+            font-size: 42px;
+            margin: 0;
+        }
+
+        h2 {
+            color: deeppink;
+            margin: 15px 0;
+        }
+
+        p {
+            font-size: 20px;
+            color: #444;
+        }
+
+        .tap {
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <canvas id="bg"></canvas>
+
+    <div class="card">
+        <h1>🎂 Happy Birthday 🎂</h1>
+        <h2 id="name"></h2>
+        <p id="message"></p>
+        <div class="tap">Tap anywhere 🎵🎆</div>
+    </div>
+
+    <audio id="song" loop>
+        <source src="birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="hearts.js"></script>
+
+</body>
+</html>
