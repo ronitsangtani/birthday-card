@@ -3,7 +3,10 @@ body {
     overflow: hidden;
     background: linear-gradient(to bottom right, #ffb6c1, #ffc0cb);
     font-family: 'Comic Sans MS', cursive;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 canvas {
     position: fixed;
@@ -37,3 +40,4 @@ canvas {
     font-size: 20px;
     color: #444;
 }
+
