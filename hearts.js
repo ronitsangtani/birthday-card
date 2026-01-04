@@ -2,7 +2,7 @@
 let name = new URLSearchParams(window.location.search).get("name");
 
 if (!name || name.trim() === "") {
-    name = prompt("Enter your friend's name:");
+    name = prompt("Enter your name:");
 }
 
 document.getElementById("name").innerText = name || "Dear Friend";
@@ -97,8 +97,8 @@ function drawFirework(fw) {
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-    if (Math.random() < 0.07) hearts.push(createHeart());
-    if (Math.random() < 0.03) fireworks.push(createFirework());
+    if (Math.random() < 0.06) hearts.push(createHeart());
+    if (Math.random() < 0.02) fireworks.push(createFirework());
 
     hearts.forEach((h, i) => {
         h.y -= h.speed;
@@ -122,3 +122,4 @@ window.onresize = () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 };
+
